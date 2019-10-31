@@ -5,16 +5,23 @@
 
 int main(void) 
 {
-	int data[5];
 	int i;
+	int grade[5];
+	int score[5];
 	
-	data[0] = 10;
-	data[1] = 20;
-	data[2] = 30;
-	data[3] = 40;
-	data[4] = 50;
 	for (i=0;i<5;i++)
-	 printf("data[%i] = %i\n", i, data[i]);
-		
+	{
+		grade[i] = rand() % 100;	
+	}
+	
+	for (i=0;i<5;i++)
+	{
+		score[i] = grade[i];
+	}
+	
+	for (i=0;i<5;i++)
+	{
+		printf("score[%i] = %i\n", i, score[i]);
+	}
 	return 0;
 }
